@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+    
+body{
+    font-family: Helvetica, sans-serif;
+}
+    .utama{
+        display: flex;
+        justify-content: center;
+    } 
+
+    #about{
+        display: flex;
+        margin: 30px 180px;
+    }
+
+    .conten2{
+        margin-top: 100px;
+        margin-left: 140px;
+        font-size: 20px;
+    }
+
+    .conten2 > h1{
+        color: rgb(102, 188, 159);
+    }
+
+
+    .conten2 > h5{
+        color: grey;
+        margin-top: -17px;
+    }
+    .q {
+        margin-top: 70px;
+    }
+
+/* ini hobi */
+
+.utama{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.hobi{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 132px;
+  margin: 0px 100px;
+  margin-top: 50px;
+}
+
+.service-detail-item{
+  box-shadow: 4px 7px 6px grey;
+  filter: grayscale(0.7) ;
+}
+
+.service-detail-item:hover{
+  transform: scale(1.1);
+  filter: grayscale(0) ;
+}
+
+.service-detail-item img{
+  width: 100%;
+}
+
+.service-detail-item  h2{
+  padding: 40px 36px 0px 36px ;
+  font-size: 30px;
+  color: rgb(102, 188, 159);
+}
+
+
+.service-detail-item  p{
+  padding: 20px 36px 20px 36px ;
+  font-size: 20px;
+}
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+</style>
+<body >
+    <section>
+        <div>
+             <h1 class="utama">Tentang Saya</h1>
+             <div id="about" data-aos="flip-right">
+            <div class="q">
+                <img src="poto/c.png" width="400px" alt="">
+            </div>
+            <div class="conten2" data-aos="fade-left">
+                <h1>I'M Akhmad Danil</h1>
+                <h5>seorang pelajar</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, praesentium. Ullam quo facere ad asperiores inventore labore ipsum, doloremque fuga Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusamus magnam, id cumque eaque asperiores blanditiis molestiae doloremque veniam, aperiam, vitae nam qui temporibus eum quis hic. Officiis, quibusdam deleniti..</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+    <section>
+        <h1 class="utama" align="center"> Hobi Saya</h1>
+        <br><br>
+        <div class="hobi" data-aos="fade-up"
+        data-aos-duration="3000">
+            <div class="service-detail-item">
+                <img src="poto/basket.JPG" alt="">
+                <h2>Basket</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, explicabo?</p>
+            </div>
+            <div  class="service-detail-item">
+                <img src="poto/bola.JPG" alt="" >
+                <h2>Sepak Bola</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, alias!</p>
+            </div> 
+            <div  class="service-detail-item">
+                <img src="poto/6.JPG" alt="">
+                <h2>Futsal</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, quisquam.</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

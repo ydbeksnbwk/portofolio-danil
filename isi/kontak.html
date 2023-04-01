@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>\
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+
+  *{
+    font-size: 21px;
+  }
+
+  body{
+    font-family: Helvetica, sans-serif;
+}
+  BODY>p{
+    margin-top: 100PX;
+  }
+
+  .Contact{
+    
+    justify-content: space-between;
+    margin: 50px 170px;
+  }
+
+  .h06{
+    color: #04AA6D;
+  }
+
+  h1{
+    text-decoration: underline;
+  }
+  * {
+  box-sizing: border-box;
+}
+
+  form{
+    border: 2px solid #04AA6D;
+    padding: 20px;
+  }
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  outline:none;
+}
+
+textarea :hover {
+  outline:none;
+        border-color:#03ccf4;
+        box-shadow:0 0 15px #03ccf4;}
+
+
+
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+label{
+  color: #04AA6D;
+}
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+input:focus { 
+        outline:none;
+        border-color:#03ccf4;
+        box-shadow:0 0 15px #03ccf4;}
+
+        ul{
+            display: flex;
+            margin-left: -60px;
+            margin-top: 70px;
+            }
+            ul li{
+            position: relative;
+            display: block;
+            color: #666;
+            font-size: 30px;
+            height: 60px;
+            width: 190px;
+            background: #ffffff;
+            line-height: 60px;
+            border-radius: 50%;
+            margin: -10px 10px;
+            cursor: pointer;
+            transition: .5s;
+            }
+
+            ul li:before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: inherit;
+            width: inherit;
+            /* background: #d35400; */
+            border-radius: 50%;
+            transform: scale(.9);
+            z-index: -1;
+            transition: .5s;
+            }
+            ul li:nth-child(1):before{
+            background: #4267B2;
+            }
+            ul li:nth-child(2):before{
+            background: #1DA1F2;
+            }
+            ul li:nth-child(3):before{
+            background: #E1306C;
+            }
+            ul li:nth-child(4):before{
+            background: #2867B2;
+            }
+            ul li:nth-child(5):before{
+            background: #ff0000;
+            }
+            ul li:hover:before{
+            filter: blur(3px);
+            transform: scale(1.2);
+            /* box-shadow: 0 0 15px #d35400; */
+            }
+
+
+            ul li:nth-child(1):hover:before{
+            box-shadow: 0 0 15px #4267B2;
+            }
+            ul li:nth-child(2):hover:before{
+            box-shadow: 0 0 15px #1DA1F2;
+            }
+            ul li:nth-child(3):hover:before{
+            box-shadow: 0 0 15px #E1306C;
+            }
+            ul li:nth-child(4):hover:before{
+            box-shadow: 0 0 15px #2867B2;
+            }
+            ul li:nth-child(5):hover:before{
+            box-shadow: 0 0 15px #ff0000;
+            }
+            ul li:nth-child(1):hover{
+            color: #456cba;
+            box-shadow: 0 0 15px #4267B2;
+            text-shadow: 0 0 15px #4267B2;
+            }
+            ul li:nth-child(2):hover{
+            color: #26a4f2;
+            box-shadow: 0 0 15px #1DA1F2;
+            text-shadow: 0 0 15px #1DA1F2;
+            }
+            ul li:nth-child(3):hover{
+            color: #e23670;
+            box-shadow: 0 0 15px #E1306C;
+            text-shadow: 0 0 15px #E1306C;
+            }
+            ul li:nth-child(4):hover{
+            color: #2a6cbb;
+            box-shadow: 0 0 15px #2867B2;
+            text-shadow: 0 0 15px #2867B2;
+            }
+            
+            ul li:nth-child(5):hover{
+            color: #ff1a1a;
+            box-shadow: 0 0 15px #ff0000;
+            text-shadow: 0 0 15px #ff0000;
+            }
+
+</style>
+<body>   
+    
+    <div class="container">
+  <div style="text-align:center">
+    <h1>CONTACT US</h1>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="Contact">
+        <div>
+          <h4 class="h06">Phone</h4>
+          <p>Phone: 0812 1907 6171
+          </p>
+        </div>
+        <div>
+          <h4 class="h06">Email</h4>
+          <p>akhmaddani13@gmail.com<br>
+          info@holawebsite.com
+          </p>
+        </div>
+        <div>
+          <h4 class="h06">Address</h4>
+          <p>
+          Cikakak , Banjarharjo , Brebes<br>
+          5223
+          </p>
+        </div>
+        <ul>
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-linkedin-in"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+       </ul>
+      </div>
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">mars</option>
+          <option value="canada">Kersana</option>
+          <option value="usa">Cikakak</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit">
+      </form>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
